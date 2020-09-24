@@ -1,0 +1,197 @@
+*{
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    transition: .3s;
+}
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: hsl(180, 52%, 96%);
+}
+.design{
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    z-index: 0;
+}
+header{
+    position: relative;
+    width: 100%;
+    height: 156px;
+    padding-bottom: 1.6rem;
+    background-image: url("images/bg-header-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #5da5a4;
+}
+
+/* main */
+main{
+    position: relative; 
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* nav */
+nav{
+    padding: 1.35rem 2.5rem 0 2.5rem;
+    position: relative; left: 11.5%; top:  -2.3rem;
+    width: 77%;
+    background-color: white;
+    min-height: 4.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px -15px hsl(180, 29%, 50%);
+}
+/* filter list */
+.filter_list{
+    display: flex;
+    flex-direction: row;
+}
+.filter_item{
+    display: flex;
+    flex-direction: row;
+    height: 2rem;
+    font-weight: 700;
+    font-size: .8rem;
+    margin-right: 1rem;
+    background-color:hsl(180, 52%, 96%);
+}
+.filter_item_name{
+    padding: .5rem .65rem 0rem .4rem;
+}
+.filter_item_close{
+    /* background-color: hsl(180, 14%, 20%); */
+    background-color: hsl(180, 29%, 50%);
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filter_item_close:hover{
+    background-color: hsl(180, 14%, 20%);
+    transition: .3s;
+}
+
+.filter_clear{
+    padding: .4rem 0rem .4rem 0;
+    height: 100%;
+}
+.filter_clear button{
+    border: none;
+    background-color: white;
+    outline: none;
+    text-decoration: none;
+    font-size: 1rem;
+    /* border-bottom: 1px solid hsl(180, 29%, 50%); */
+    color:   hsl(180, 8%, 52%);
+}
+.filter_clear button:hover{
+    border-bottom: 1px solid hsl(180, 29%, 50%);
+    transition: .3s;
+}
+/* job list */
+.job_list{
+    margin-top: .3rem;
+    width: 77%;
+}
+/* job */
+.job{
+    position: relative;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: .3rem 2.5rem .3rem 2.5rem;
+    height: 9.6rem;
+    margin-bottom: 1.4rem;
+    border-radius: 5px;
+    box-shadow: 0px 10px 25px -13px hsl(180, 29%, 50%);
+}
+/* company_info */
+.company_info{
+    height: 100%;
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* company_name_box */
+.company_name_box{
+    margin-top: -.4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.company_name_box p{
+    margin-right: 1.1rem;
+    font-size: .85rem;
+    font-weight: 700;
+    color: hsl(180, 29%, 50%);
+}
+.company_name_box p:nth-child(2){
+    margin-right: .5rem;
+    color: white;
+    font-size: .7rem;
+    background-color: hsl(180, 29%, 50%);
+    padding: .4rem .5rem .3rem .5rem;
+    border-radius: 15px;
+}
+.company_name_box p:nth-child(3){
+    color: white;
+    font-size: .7rem;
+    background-color: hsl(180, 14%, 20%);
+    padding: .5rem .5rem .4rem .5rem;
+    border-radius: 15px;
+}
+/* company_position_box */
+.company_position_box h1{
+    margin-top: .7rem;
+    font-size: 1.12rem;
+    color: hsl(180, 14%, 20%);
+}
+/* company_work_info_box */
+.company_work_info_box{
+    margin-top: .55rem;
+    display: flex;
+    flex-direction: row;
+}
+.company_work_info_box p:nth-child(1){
+    margin-right: 2.2rem;
+}
+.company_work_info_box p:nth-child(2){
+    margin-right: 2.2rem;
+}
+
+/* company_list */
+.company_list{
+    position: absolute; right: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+.company_item_box{
+    background-color: hsl(180, 52%, 96%);
+    color: hsl(180, 17%, 55%);
+    margin-left: 1.1rem;
+}
+.company_item_box:hover{
+    background-color: hsl(180, 29%, 50%);
+    color: white !important;
+    transition: .4s;
+}
+.company_item{
+    padding: .5rem .5rem;
+    font-size: .8rem;
+}
